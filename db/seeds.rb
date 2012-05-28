@@ -2,6 +2,6 @@
 
 account = Account.create account_type:  'gmail',
                          user_name:     'cgabaldon',
-                         password:      'Fixedgearbike1228'
+                         password:      ''
 @user.accounts << account
 @user.save

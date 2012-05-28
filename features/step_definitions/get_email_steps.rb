@@ -3,7 +3,7 @@ Given /^the user has a Gmail  account$/ do
   
   account = Account.create account_type:  'gmail',
                            user_name:     'cgabaldon',
-                           password:      'Fixedgearbike1228'
+                           password:      ''
   @user.accounts << account
   @user.save
 end
