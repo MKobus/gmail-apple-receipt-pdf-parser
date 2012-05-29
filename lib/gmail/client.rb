@@ -1,11 +1,6 @@
 require 'mail'
 require 'openssl'
 
-# klass = ::Gmail::Client
-# klass.fetch user_name: 'cgabaldon',
-#             password: 'password' do |mail|
-#               puts mail[:subject]
-#             end
 module Gmail
   class Client
     class << self
