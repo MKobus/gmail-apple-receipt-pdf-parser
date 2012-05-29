@@ -6,3 +6,8 @@ by example.
 See http://carlosgabaldon.com/articles/building-a-rails-gmail-client-outside-in for 
 detailed article on building Fetch-it
 
+=== Setup
+
+ $ rake db:migrate db:test:prepare
+ $ rake cucumber
+ $ rails s
