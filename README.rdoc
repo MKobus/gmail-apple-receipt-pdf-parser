@@ -1,6 +1,7 @@
 == Fetch-it
 
-Example Rails Gmail Client built following Outside-In Development.
+Example Rails Gmail Client built following Outside-In Development and Specification 
+by example.
 
 See http://carlosgabaldon.com/articles/building-a-rails-gmail-client-outside-in for 
 detailed article on building Fetch-it
