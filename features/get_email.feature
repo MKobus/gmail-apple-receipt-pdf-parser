@@ -4,7 +4,7 @@ Feature: Get email
      
   Scenario: Get new mail from Gmail
     Given the user has a Gmail  account
-    When they select get email from the menu
+    When they visit the index page
     Then they will see a list of new email
     
 

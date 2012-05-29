@@ -8,7 +8,7 @@ Given /^the user has a Gmail  account$/ do
   @user.save
 end
 
-When /^they select get email from the menu$/ do
+When /^they visit the index page$/ do
   visit(emails_path)
 end
 
