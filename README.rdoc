@@ -1,17 +1,1 @@
-== Fetch-it
 
-Example Rails Gmail Client built following Outside-In Development and Specification 
-by example.
-
-See http://carlosgabaldon.com/articles/building-a-rails-gmail-client-outside-in for 
-detailed article on building Fetch-it
-
-=== Setup
-
- $ git clone https://CarlosGabaldon@github.com/CarlosGabaldon/fetch-it.git
-  #Update user_name & password for Gmail account in the following files.
- $ sudo nano ./features/step_definitions/get_email_steps.rb
- $ sudo nano ./db/seeds.rb
- $ rake db:migrate db:test:prepare
- $ rake cucumber
- $ rails s

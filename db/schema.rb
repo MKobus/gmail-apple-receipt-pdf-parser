@@ -23,8 +23,11 @@ ActiveRecord::Schema.define(:version => 20120528023430) do
   end
 
   create_table "emails", :force => true do |t|
-    t.integer  "user_id"
-    t.string   "subject"
+    t.string  "imei"
+    t.string   "location"
+    t.datetime "purchase_date"
+    t.string    "receipt_number"
+    t.string    "serial_number"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

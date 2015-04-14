@@ -1,0 +1,23 @@
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			<% if @emails.blank? %>
+			<h1>You have no duplicates</h1>
+			<% else %>
+			<% @emails.each do |email| %>
+			<h3>Duplicates for IMEI #<%= email[:entry][1][:imei] %></h3>
+			<% email[:entry].each do |entry| %>
+			<div class="col-xs-12" style="margin-bottom:50px; margin-top:30px;">
+				<div class="col-sm-2"><h4>IMEI#:</h4><%= entry[:imei] %></div>
+				<div class="col-sm-2"><h4>Receipt#:</h4><%= entry[:receipt_number] %></div>
+				<div class="col-sm-2"><h4>Date Purchased:</h4><%= entry[:purchase_date] %></div>
+				<div class="col-sm-2"><h4>Serial#:</h4><%= entry[:serial_number] %></div>
+				<div class="col-sm-2"><h4>Location:</h4><%= entry[:location] %></div>
+
+			</div>
+			<% end %>
+			<% end %>
+			<% end %>
+		</div>
+	</div>
+</div>

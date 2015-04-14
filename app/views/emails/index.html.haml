@@ -1,6 +1,0 @@
-%input{:id => "email_count", :type => "hidden", :value => "#{@emails.count}"}
-%h2 You have #{@emails.count} new emails.
-%ol
-  - @emails.each do |email|
-    %li
-      = email.subject
